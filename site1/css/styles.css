@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Redacted Script';
+  src: url('../fonts/RedactedScript-Light.ttf') format('truetype');
+}
+/* just an example of how to load a local true-type font */
+body{
+--my-brand-color: green;
+}
+
+.myplaceholder {
+    height:33.33vh;
+    background:#eee;
+}
+header.mountains {
+  background-image: url(../images/Fence-1.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+/*change the background position on big screens*/
+@media (min-width: 1200px) {
+  header.mountains {
+    background-position: center;
+  }
+}
+header .teaser {
+  background-color: rgba(000, 55, 000, 0.6);
+}
+
+.navbar-brand img {
+        height:80px;
+    
+}
