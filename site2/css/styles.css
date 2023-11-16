@@ -1,0 +1,66 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+/* css custom properties */
+:root {   
+ --my-brand-color: #e91e63;   
+ --my-special-btn-color: #009688;
+ --my-special-search-btn-background-color:purple;   
+    --my-accent-color-light: palegreen;
+    --my-accent-color-dark: royalblue;
+ /*--bs-dark-rgb: 25,135,84 !important; */
+
+}
+/* important: change this value to the computed height of your nav with your desired logo in it*/
+header {
+height: 56px;  
+}
+
+.myplaceholder {
+    background: #eee;
+    height: 33vh;
+}
+.my-light-navbar {
+    background:#fff;
+}
+nav[data-bs-theme="dark"]{
+  background:var(--my-brand-color); 
+}
+
+.btn-outline-success {
+    color:var(--my-special-btn-color);
+    background: var(--my-special-search-btn-background-color);
+    border-color: var(--my-special-btn-color);
+}
+.btn-outline-success:hover{
+   background:var(--my-special-btn-color);
+ color: var(--my-special-search-btn-background-color);
+    color:var();
+}
+
+
+
+.btn-primary {
+    background:var(--my-brand-color);
+    border:var(--my-brand-color);
+    color:ivory;
+}
+.btn-primary:hover, .btn-primary:first-child:active{
+    background:var(--my-accent-color-light);
+    color:var(--my-special-btn-color);
+}
+
+.btn-primary:focus {
+     background:var(--bs-teal);
+    border:var(--my-brand-color);
+    box-shadow: 0 0 0 .25rem rgba(25,135,84,.5);
+        color:var(--my-special-btn-color);
+}
+
+
+a.active {
+  border-bottom: 1px solid var(--my-brand-color) ;
+}
+
+
+footer i {
+	color:var(--my-brand-color);
+} 
