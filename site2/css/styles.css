@@ -73,3 +73,6 @@ color: #3379CD
 footer i {
 	color:var(--my-brand-color);
 } 
+a.navbar-brand img{
+    height: 50px
+}
