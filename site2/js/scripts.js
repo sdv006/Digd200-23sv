@@ -27,4 +27,4 @@ navLinks.forEach((link) => {
 let today = new Date();
 let year = today.getFullYear();
 // TASK: Set the inner html of the <p> with an id of footer-notice to this: Copyright and then use a template literal to show the year variable.
-document.getElementById("footer-notice").innerHTML=`<p>Copyright &copy; ${year}</p>`
+document.getElementById("footer-notice").innerHTML=`<p>Pure Sun Finance; ${year}</p>`

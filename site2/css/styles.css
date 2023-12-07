@@ -24,7 +24,7 @@ height: 56px;
 
 .myplaceholder {
     background: #eee;
-    height: 33vh;
+    height: 70vh;
 }
 
 header.mountains {
@@ -33,12 +33,12 @@ header.mountains {
   background-position: bottom;
 }
 /*change the background position on big screens*/
-@media (min-width: 1200px) {
+@media (min-width: 120px) {
   header.mountains {
     background-position: center;
   }
 .my-light-navbar {
-    background:#CDECF9;
+    background:#fff;
 }
 nav[data-bs-theme="dark"]{
   background:var(--my-brand-color); 
@@ -54,7 +54,10 @@ nav[data-bs-theme="dark"]{
  color: var(--my-special-search-btn-background-color);
     color:var();
 }
-
+    .hvr-underline-from-center:before {
+  background:#418EB0;
+  height: 2px;
+}
 
 
 .btn-primary {
@@ -88,3 +91,8 @@ footer i {
 a.navbar-brand img{
     height: 50px
 }
+    
+.homeimg{
+    background-image: url(../images/title_page.jpg);
+    background-repeat: round
+    }
