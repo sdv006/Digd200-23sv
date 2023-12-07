@@ -8,15 +8,16 @@
 h1,h2,h3{font-family: "Red Hat Display"}
 /* css custom properties */
 :root {   
- --my-brand-color: #3379CD;   
+ --my-brand-color: #444DA0;   
  --my-special-btn-color: white;
- --my-special-search-btn-background-color:#3379CD;   
+ --my-special-search-btn-background-color:#444DA0;   
     --my-accent-color-light: #A3CDFF;
-    --my-accent-color-dark: royalblue;
+    --my-accent-color-dark: #444DA0;
  /*--bs-dark-rgb: 25,135,84 !important; */
 
 }
 /* important: change this value to the computed height of your nav with your desired logo in it*/
+
 header {
 height: 56px;  
 }
@@ -25,8 +26,19 @@ height: 56px;
     background: #eee;
     height: 33vh;
 }
+
+header.mountains {
+  background-image: url(../images/about-us1.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+/*change the background position on big screens*/
+@media (min-width: 1200px) {
+  header.mountains {
+    background-position: center;
+  }
 .my-light-navbar {
-    background:#fff;
+    background:#CDECF9;
 }
 nav[data-bs-theme="dark"]{
   background:var(--my-brand-color); 
@@ -68,7 +80,7 @@ a.active {
 }
 
 h1 {
-color: #3379CD   
+color: #444DA0   
 }
 footer i {
 	color:var(--my-brand-color);
